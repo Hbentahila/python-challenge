@@ -15,7 +15,7 @@ change_profit_loss= []
 with open(budget_csv) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
   
-    # Reading the header row first
+    # Reading and skipping the header row
     csv_header = next(csvreader)
     
     # Looping through our csv file and adding:
@@ -25,13 +25,13 @@ with open(budget_csv) as csvfile:
         profit_loss.append(int(row[1]))
     
     # Calculating the total number of months and 
-    # The net total amount of "Profit/Losses" over the entire period
+    # The net total amount of "Profits/Losses" over the entire period
     total_months= len(date)
     total_profit_loss= sum(profit_loss)
 
-    # Looping through the profil_loss newly created list and 
-    # Calculating the changes in "Profit/Losses" over the entire period
-    # Amounts are added to the list change_profit_loss
+    # Looping through the profit_loss newly created list and 
+    # Calculating the changes in "Profits/Losses" over the entire period
+    # The amounts are added to the list change_profit_loss
     for i in range(1, len(profit_loss)):
         change_profit_loss.append(int(profit_loss[i]-profit_loss[i-1]))
 
