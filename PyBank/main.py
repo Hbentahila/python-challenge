@@ -3,8 +3,7 @@ import os
 import csv
 
 # Command prompt should be opened in Folder PyBank
-budget_csv= os.path.join("..", "Resources", "budget_data.csv")
-print(budget_csv)
+budget_csv= os.path.join("Resources", "budget_data.csv")
 
 # Creating lists to store data
 date= []
@@ -59,6 +58,6 @@ with open(budget_csv) as csvfile:
     print(output)
 
 # Exporting a text file with the results
-analysis_output= "../Analysis/financial_analysis.txt"
+analysis_output= "Analysis/financial_analysis.txt"
 writer= open(analysis_output, "w") 
 writer.write(output)
