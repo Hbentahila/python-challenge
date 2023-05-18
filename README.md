@@ -28,3 +28,10 @@ You will be given a set of poll data called election_data.csv. The dataset is co
 * The winner of the election based on popular vote
 
 In addition, your final script should both print the analysis to the terminal and export a text file with the results.
+
+# Solution:
+
+* Please refer to main.py under the folder PyBank for the first section of the challenge
+* Please refer to main.py under the folder PyPoll for the second section of the challenge
+* Results printed successfully to Terminal when the script is executed
+* Results printed successfully to a text file for both sections under the folder Analysis
